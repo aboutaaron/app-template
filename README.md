@@ -28,6 +28,7 @@ cd $NEW_PROJECT_NAME
 # git checkout [init-map|init-table|init-chat|init-tumblr]
 
 mkvirtualenv --no-site-packages $NEW_PROJECT_NAME
+workon $NEW_PROJECT_NAME
 pip install -r requirements.txt
 
 fab app_template_bootstrap
